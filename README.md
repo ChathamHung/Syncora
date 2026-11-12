@@ -156,6 +156,71 @@ Windows toasts.
 
 ---
 
+## AI Used
+The entire project was created using DeepSeek V4.1 Flash (Max). Only the final publishing step was performed by a human.
+
+<details>
+  <summary>Original Prompts</summary>
+
+  ### English Version (translated)
+  ```
+  Develop a file and folder synchronization application using the Rust programming language and the `egui` (https://github.com/emilk/egui) framework. You may choose any name for the software.
+The purpose of the software is to keep the contents of two or more files or folders synchronized. When a file or folder is added, modified, or deleted in one location, the software should automatically propagate these changes to the designated target locations, ensuring that the content remains identical across all devices or storage spaces. The application should support multiple synchronization tasks.
+Core features must include:
+- One-way Sync: Data is copied in one direction—from the "source" to the "destination" (typically used for backups).
+- Two-way (Bi-directional) Sync: Changes made to files on either device (A or B) are reflected on the other, ensuring consistency.
+- Mirror Sync: The destination folder is forced to become an exact replica of the source folder (files deleted from the source are also removed from the destination).
+- Incremental/Differential Sync: The software detects and transfers only files that have been modified or newly added, saving significant time and storage space.
+
+The software should:
+- Feature an intuitive, user-friendly interface.
+- Be ready to use "out of the box" (requiring minimal initial configuration).
+- Include UI elements (such as tooltips) to help users understand how to use the software.
+- Support background operation (including the ability to minimize to the system tray).
+- Include a settings page.
+- Support automatic startup on system boot (disabled by default; configurable via settings).
+- Handle conflicts by issuing Windows notifications, allowing users to choose how to resolve them—or alternatively, providing an option in the settings to automate conflict resolution. •	Synchronize history records.
+- Support switching between English, Chinese, and other languages ​​(for now, please implement English and Chinese; the application should detect the system language upon startup).
+- Automatically switch between light and dark themes based on system settings (allow users to manually override this in the settings).
+- Enable users to export and import configuration files.
+- Include a master switch to enable or disable all tasks.
+All code comments must be in English and written to be easily readable and maintainable by others. Ensure the project is free of errors and that all features function correctly. Every task must be designed to run automatically in the background.
+
+These are the core requirements; you are welcome to add extra features (please provide a description of any additional features you implement). Use the `egui` library to build the application's GUI. Please create a brand-new project—do not use or modify any existing, older projects. Ensure that none of the required features necessitate administrator privileges (if a folder requires such permissions, prompt the user accordingly). The final build should be a single, portable executable (EXE) file. The software must be error-free and fully functional; the terminal window should not appear while the application is running. Upon completion, please compile the project using `cargo build --release`.
+  ```
+
+  ### Original Prompt (Chinese)
+  ```
+用Rust语言和egui (https://github.com/emilk/egui) 制作一个文件和资料夹同步软件（File and folder sync software）。名字你自己随便起。
+软件的目的是保持两个或多个文件和资料夹里面的内容保持相同，如果检测在其中一个地方新增、修改或删除时，软体需要自动把这些变更复制或传播到指定的位置，确保所有装置或储存空间上的内容完全相同。允许用户可以添加多个同步任务而不只是一个。
+需要包含的核心功能：
+- 单向同步（One-way Sync）：资料只会从「来源端」单向复制到「目标端」（常用于建立备份）。
+- 双向同步（Two-way / Bi-directional Sync）：无论你在 A 装置还是 B 装置修改了档案，两边都会互相更新，保持内容一致。
+- 镜像同步（Mirror Sync）：将目标资料夹强制变成与来源资料夹一模一样（来源端删除的档案，目标端也会跟着删除）。
+- 增量/差异同步：软体只会侦测并传输「被修改过或新增加」的档案，省下大量的传输时间与储存空间。
+
+软件需要：
+- 制作一个良好可以让用户简单上手的界面
+- 确保可以开箱即用（不需要过多的基本设置）
+- 添加一些组件让用户了解和如何使用（例如tooltip）
+- 确保软件可以在背景运行（需要允许收缩到托盘里面）
+- 包括设置页面
+- 开机自启（默认关闭，用户需要在设置里面开启）
+- 如果检测到冲突，可以使用Windows的通知提醒，允许用户选择如何解决，或者用户可以在设置中调整自动处理。
+- 同步历史纪录
+- 英文，中文和其他的语言切换（你目前只需要做英文和中文的语言就行了。默认打开的时候需要检测系统的语言）
+- 需要根据系统的检测浅色和深色主题中切换（允许用户在设置中手动更改）
+- 允许用户导出或导入设置文件
+- 一个总开关可以控制全部任务的开启或关闭
+
+在代码中所有的注释需要用英文，并让其他人可以简单易读和修改。还有确保整个项目不会有任何错误，并且所有功能可以正常运行。每个任务需要确保能在背景自动完成运行。
+以上这些是软件的基本要求，你可以自己添加一些额外的功能（完成的时候，你需要描述出来你加了什么功能）。你需要使用egui library创建整个应用的GUI。请创建一个全新的项目，请勿使用或修改以前的旧项目。并且确保以上的所有功能都不需要管理员权限（如果文件夹需要管理员的权限的时候，可以向用户申请）。编译出来的需要是单个携带版EXE文件。确保软件不会出现任何错误并且所有功能需要运作并且正常，还有不要出现终端在运行的时候。完成的时候请运行`cargo build --release`进行编译。
+  ```
+  
+</details>
+
+---
+
 ## 中文简介
 
 **Syncora 是一款让多个文件夹始终保持一致的 Windows 同步工具**，使用 Rust 与 egui
