@@ -76,8 +76,9 @@ When the same file changes on both sides, Syncora does not guess. It:
 
 ### Download
 
-Grab `Syncora.exe` from the [Releases](../../releases) page and run it. It is a single
-portable executable — nothing to install, no dependencies, no admin prompt.
+Grab `Syncora.exe` from the
+[Releases page](https://github.com/ChathamHung/Syncora/releases) and run it. It is a
+single portable executable — nothing to install, no dependencies, no admin prompt.
 
 ### Build from source
 
