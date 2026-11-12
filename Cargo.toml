@@ -4,6 +4,8 @@ version = "1.0.0"
 edition = "2021"
 description = "Syncora - a friendly file and folder synchronization app"
 authors = ["Syncora"]
+license = "MIT"
+repository = "https://github.com/ChathamHung/Syncora"
 
 [[bin]]
 name = "Syncora"

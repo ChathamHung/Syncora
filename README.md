@@ -186,3 +186,16 @@ cargo build --release
 ```
 
 生成的 `target/release/Syncora.exe` 即为可直接运行的单文件程序。
+
+---
+
+## License
+
+[MIT](LICENSE) © 2026 ChathamHung
+
+Free to use, modify and redistribute — including commercially — as long as the
+copyright notice and permission notice are kept.
+
+本项目采用 [MIT 许可证](LICENSE)，可自由使用、修改与再分发（含商业用途），
+只需保留版权声明与许可声明。
+
