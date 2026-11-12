@@ -1,0 +1,17 @@
+# Build output
+/target/
+
+# Rust backup files
+**/*.rs.bk
+
+# Debug symbols
+*.pdb
+*.dSYM/
+
+# Editor and OS noise
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
